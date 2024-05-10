@@ -26,45 +26,56 @@ Execute the necessary commands/batch file for the desired output.
 # WINDOWS COMMANDS:
 ## Exercise 1: Basic Directory and File Operations
 Create a directory named "MyLab" on the desktop.
-
-
 ## COMMAND AND OUTPUT
+```
+mkdir %userprofile%\Desktop\MyLab
+```
+![](./out1.png)
 
 Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
 
 
 ## COMMAND AND OUTPUT
+```
+cd %userprofile%\Desktop\MyLab
+```
+![](./out2.png)
+```
+type nul > MyFile.txt
+```
+![](./out3.png)
 
 List the contents of the "MyLab" directory.
-
-
 ## COMMAND AND OUTPUT
+```
+dir %userprofile%\Desktop\MyLab
+```
+![](./out4.png)
 
 Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
-
 ## COMMAND AND OUTPUT
+```
+mkdir %userprofile%\Desktop\Backup
+```
+![](./out5.png)
+```
+copy MyFile.txt %userprofile%\Desktop\Backup
+```
+![](./out6.png)
 
 Move the "MyLab" directory to the "Documents" folder.
-
-
 ## COMMAND AND OUTPUT
-
+```
+move Myfile.txt %userprofile%\Documents
+```
+![](./out7.png)
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
-
-
-
-
-
-
-
 ## OUTPUT
-
-
-
+![](./out8.png)
+![](./out9.png)
 
 
 # RESULT:
 The commands/batch files are executed successfully.
-
